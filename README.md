@@ -47,8 +47,8 @@ var winstonRemote = require('winston-remote').Transport;
 var logger = new (winston.Logger)({
     transports: [
         new (winstonRemote)({
-            host: '0.0.0.0', // remote server ip
-            port: 9003 // remote server port
+            host: '192.168.1.100', // Remote server ip
+            port: 9003 // Remote server port
         })
     ]
 });
