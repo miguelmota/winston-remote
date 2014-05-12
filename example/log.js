@@ -11,4 +11,4 @@ var logger = new (winston.Logger)({
     ]
 });
 
-logger.info('foo', {bar: 'qux'});
+logger.info('foo');
