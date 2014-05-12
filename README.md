@@ -32,6 +32,12 @@ winstonServer.logger = new (winston.Logger)({
 });
 ```
 
+```bash
+node server.js
+
+Listening on port 9003
+```
+
 Set up your local winston transport that sends the winston logs to the remote server:
 
 ```javascript
