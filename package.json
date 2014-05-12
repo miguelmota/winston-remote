@@ -1,6 +1,6 @@
 {
   "name": "winston-remote",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stream your winston logs to a remote winston server.",
   "main": "index.js",
   "directories": {

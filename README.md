@@ -42,11 +42,11 @@ Set up your local winston transport that sends the winston logs to the remote se
 
 ```javascript
 var winston = require('winston');
-var winstonRemote = require('winston-remote').Transport;
+var winstonRemoteTransport = require('winston-remote').Transport;
 
 var logger = new (winston.Logger)({
     transports: [
-        new (winstonRemote)({
+        new (winstonRemoteTransport)({
             host: '192.168.1.100', // Remote server ip
             port: 9003 // Remote server port
         })
