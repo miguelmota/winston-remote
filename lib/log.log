@@ -1,0 +1,16 @@
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T22:59:27.723Z"}
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T22:59:48.510Z"}
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T22:59:49.626Z"}
+{"level":"info","message":"woo","timestamp":"2014-05-11T23:02:37.039Z","meta":{}}
+{"level":"info","message":"woo","timestamp":"2014-05-11T23:02:53.410Z","meta":{"foo":1}}
+{"level":"info","message":"woo","timestamp":"2014-05-11T23:04:53.918Z","meta":{"foo":1}}
+{"level":"info","message":"woo","timestamp":"2014-05-11T23:05:27.612Z"}
+[]
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T23:18:40.505Z"}
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T23:18:57.513Z"}
+{"level":"info","message":"woo","meta":{},"timestamp":"2014-05-11T23:19:47.264Z"}
+{"level":"info","message":"woo"}
+{"level":"info","message":"woo","timestamp":"Sun May 11 2014 16:21:34 GMT-0700 (PDT)"}
+{"level":"info","message":"woo","timestamp":"Sun May 11 2014 16:23:13 GMT-0700 (PDT)"}
+{"level":"info","message":"woo","meta":{"foo":1},"timestamp":"Sun May 11 2014 16:24:09 GMT-0700 (PDT)"}
+{"level":"info","message":"foo","meta":{"bar":"qux"},"timestamp":"Sun May 11 2014 18:39:35 GMT-0700 (PDT)"}

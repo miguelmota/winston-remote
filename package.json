@@ -1,0 +1,35 @@
+{
+  "name": "winston-remote",
+  "version": "0.0.1",
+  "description": "Stream your winston logs to a remote winston server.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "winston": "~0.7.3",
+    "request": "~2.34.0",
+    "winston-nssocket": "~0.1.0",
+    "winstond": "~0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmota/winston-remote"
+  },
+  "keywords": [
+    "winston",
+    "log",
+    "remote"
+  ],
+  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguelmota/winston-remote/issues"
+  },
+  "homepage": "https://github.com/miguelmota/winston-remote"
+}
