@@ -1,7 +1,7 @@
 var winstonRemote = require('../index').Server;
 var winston = require('winston');
 
-winstonServer = winstonRemote.createServer({
+var winstonServer = winstonRemote.createServer({
     port: 9003
 });
 

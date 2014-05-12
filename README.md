@@ -18,21 +18,21 @@ Set up your remote winston server:
 var winston = require('winston');
 var winstonRemote = require('winston-remote').Server;
 
-winstonServer = winstonRemote.createServer({
+var winstonServer = winstonRemote.createServer({
     port: 9003
 });
 
 winstonServer.listen();
 
-// How you want to save the incoming winston logs
+// Set up the winston logger transports
 winstonServer.logger = new (winston.Logger)({
     transports: [
-        new winston.transports.File({ filename: '/usr/local/var/log/winston/info.log' })
+        new winston.transports.File({ filename: '/var/log/winston/info.log' })
     ]
 });
 ```
 
-Set up your local winston transport:
+Set up your local winston transport that sends the winston logs to the remote server:
 
 ```javascript
 var winston = require('winston');
@@ -48,10 +48,18 @@ var logger = new (winston.Logger)({
 });
 ```
 
-Log as usual:
+Afterwards just log as usual:
 
 ```javascript
-logger.info('foo', {bar: 'qux'});
+logger.info('foo');
+```
+
+and then on your remote server you can check the save logged files:
+
+```bash
+cat /var/log/winston/info.log
+
+{"level":"info","message":"foo","timestamp":"2014-05-12T02:56:23.039Z"}
 ```
 
 ## License
