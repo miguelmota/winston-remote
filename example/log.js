@@ -6,7 +6,9 @@ var logger = new (winston.Logger)({
         new (winston.transports.Console)(),
         new (winstonRemoteTransport)({
             host: '127.0.0.1',
-            port: 9003
+            port: 9003,
+            label: 'Client',
+            stack: true
         })
     ]
 });

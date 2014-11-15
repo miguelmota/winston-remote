@@ -1,4 +1,4 @@
-# Winston Remote v0.0.1
+# Winston Remote
 
 Stream your [winston](https://github.com/flatiron/winston) logs to a remote winston server.
 
@@ -66,6 +66,23 @@ and then on your remote server you can check the save logged files:
 cat /var/log/winston/info.log
 
 {"level":"info","message":"foo","timestamp":"2014-05-12T02:56:23.039Z"}
+```
+
+With line info:
+
+```
+...
+new (winstonRemoteTransport)({
+    host: '127.0.0.1',
+    port: 9003,
+    label: 'Client',
+    stack: true
+})
+...
+```
+
+```
+info: Client::foo at example/log.js:16:8 Object.<anonymous>
 ```
 
 ## License
