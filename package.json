@@ -1,14 +1,14 @@
 {
   "name": "winston-remote",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Stream your winston logs to a remote winston server.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "lodash": "^3.9.3",
-    "winston": "^1.0.0"
+    "lodash": "^4.17.15",
+    "winston": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
