@@ -1,7 +1,7 @@
-var winstonRemote = require('../index').Server;
-var winston = require('winston');
+const winstonRemote = require('../index').Server;
+const winston = require('winston');
 
-var winstonServer = winstonRemote.createServer({
+const winstonServer = winstonRemote.createServer({
   host: '127.0.0.1',
   port: 9003
 });
