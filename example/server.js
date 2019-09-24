@@ -1,12 +1,12 @@
-const winstonRemote = require('../index').Server;
-const winston = require('winston');
+const winstonRemote = require('../index').Server
+const winston = require('winston')
 
 const winstonServer = winstonRemote.createServer({
   host: '127.0.0.1',
   port: 9003
-});
+})
 
-const colors = { 
+const colors = {
   error: 'bold white redBG',
   warn: 'italic black yellowBG',
   info: 'italic white blueBG',
@@ -14,12 +14,12 @@ const colors = {
   verbose: 'italic white blackBG',
   debug: 'bold white cyanBG',
   silly: 'underline white blackBG'
-};
+}
 
-winston.addColors(colors);
+winston.addColors(colors)
 
 winstonServer.logger = winston.createLogger({
-  level: "silly",
+  level: 'silly',
   format: winston.format.combine(
     winston.format.timestamp(),
     winston.format.colorize(),
@@ -33,6 +33,6 @@ winstonServer.logger = winston.createLogger({
     new winston.transports.Console(),
     new winston.transports.File({ filename: [__dirname, '/info.log'].join('') })
   ]
-});
+})
 
-winstonServer.listen();
+winstonServer.listen()

@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "description": "Stream your winston logs to a remote winston server.",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "test": "test"
   },
@@ -10,9 +11,12 @@
     "lodash": "^4.17.15",
     "winston": "^3.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^14.3.1"
+  },
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "lint": "standard --fix *.js lib/*.js example/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +28,7 @@
     "remote"
   ],
   "author": [
-    "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+    "Miguel Mota <hello@miguelmota.com> (https://miguelmota.com/)",
     "bshy <bshy522@gmail.com> (http://bshy.me)",
     "Luis Weir <luisw19@gmail.com>"
   ],
